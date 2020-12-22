@@ -1,8 +1,9 @@
 const mongoose = require('mongoose')
 
 const Airport = mongoose.model (
-    "Airport",
+    "airport",
     new mongoose.Schema({
+        name: String,
         country: String,
         terminals: [],
         opened: Date,
